@@ -1,0 +1,20 @@
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [14, 49, 48, 54, 29, 55, 41, 85, 36, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [49, 48, 54, 29, 55, 41, 85, 36, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [49, 54, 48, 55, 41, 85, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [54, 49, 55, 48, 85, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [54, 55, 49, 85, 48, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [55, 54, 85, 49, 48, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [55, 85, 54, 49, 48, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [85, 55, 54, 49, 48, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [85, 55, 54, 49, 48, 41, 36, 29, 14, 12]
+июл. 02, 2023 7:36:32 AM Sem2.exampl babblSort
+INFO: [85, 55, 54, 49, 48, 41, 36, 29, 14, 12]
