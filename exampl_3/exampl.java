@@ -1,5 +1,7 @@
 /*Реализовать простой калькулятор*/
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
@@ -50,21 +52,24 @@ public class exampl {
 
     public static void main(String[] args) throws IOException {
 
-        Logger loger = Logger.getLogger(exampl.class.getName());
-        FileHandler fHandler = new FileHandler("Log.txt");
-        SimpleFormatter sFormatter = new SimpleFormatter();
-        fHandler.setFormatter(sFormatter);
-        loger.addHandler(fHandler);
-                        
-        System.out.println("Введите первое число: ");
-        int num1 = scanNumber();
-        /*loger.toString(num1);*/
-        System.out.println("Введите оператор: -, +, *, /");
-        String operations = scanOperations();
-        System.out.println("Введите второе число: ");
-        int num2 = scanNumber();
-        int result = getResult(operations, num1, num2);
-        System.out.printf("%d %s %d = %d", num1, operations, num2, result);
+        try {
+            File file = new File ("Log.txt");
+            FileWriter fileWriter= new FileWriter(file, true);   
+            System.out.println("Введите первое число: ");
+            int num1 = scanNumber();
+
+            System.out.println("Введите оператор: -, +, *, /");
+            String operations = scanOperations();
+            System.out.println("Введите второе число: ");
+            int num2 = scanNumber();
+            int result = getResult(operations, num1, num2);
+            System.out.printf("%d %s %d = %d", num1, operations, num2, result);  
+            fileWriter.write("\n"+num1 + operations + num2 + "=" + result);
+            fileWriter.close();
+            } catch (Exception e) {
+            System.out.println("Исключение при работе с файлом");
+        }
+    
 
     }
 
